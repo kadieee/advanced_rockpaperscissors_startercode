@@ -23,7 +23,10 @@
 
 
 //FUNCTIONS
-
+$("#1").click(function(){
+        var rock=$("#input").val();
+        $("#result").append(rock);
+});
 
 
 // DOCUMENT READY FUNCTION
