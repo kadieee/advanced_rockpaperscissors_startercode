@@ -23,11 +23,29 @@
 
 
 //FUNCTIONS
-$("#1").click(function(){
-        var rock=$("#input").val();
-        $("#result").append(rock);
-});
-
+        $("#1").click(function(){
+          var rock=$("#input").val();
+          $("#result").append(rock);
+        });
+        
+        $("#2").click(function(){
+          var rock=$("#input").val();
+          $("#result").append(rock);
+        });
+        
+        $("#3").click(function(){
+         var rock=$("#input").val();
+         $("#result").append(rock);
+        });
 
 // DOCUMENT READY FUNCTION
-
+        $(document).ready(function(){
+//code must be inside this function
+        
+        Math.random()
+        Math.floor()
+        var arrayofvalues=["rock", "paper","scissors" ]
+        var num = Math.floor(Math.random()*3);
+        console.log(arrayofvalues[num]);
+        
+});
