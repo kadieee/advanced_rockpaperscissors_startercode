@@ -23,24 +23,16 @@
 
 
 //FUNCTIONS
-        $("#1").click(function(){
-          var rock=$("#input").val();
-          $("#result").append(rock);
-        });
-        
-        $("#2").click(function(){
-          var rock=$("#input").val();
-          $("#result").append(rock);
-        });
-        
-        $("#3").click(function(){
-         var rock=$("#input").val();
-         $("#result").append(rock);
-        });
+    
 
 // DOCUMENT READY FUNCTION
         $(document).ready(function(){
 //code must be inside this function
+        //var value = "input.val";
+        $("#enter").click(function(){
+                var value = $("#value").val();
+                $(".container text-center").append(value);
+        });
         
         Math.random()
         Math.floor()
