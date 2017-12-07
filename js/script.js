@@ -30,13 +30,21 @@
 //code must be inside this function
         //var value = "input.val";
         $("#enter").click(function(){
-                var value = $("#value").val();
-                $(".container text-center").append(value);
+               
+        var player1=$("#value").val();
+        var player2="rock";
+        var winnerText="no one yet";
+        console.log(player1);
+        if(player1 === "rock" && player2 === "rock") {
+        winnerText = "It's a tie!";
+          }
+        $("#winner").text(winnerText);
         });
         
-        Math.random()
-        Math.floor()
-        var arrayofvalues=["rock", "paper","scissors" ]
+          
+        Math.random();
+        Math.floor();
+        var arrayofvalues=["rock", "paper","scissors" ];
         var num = Math.floor(Math.random()*3);
         console.log(arrayofvalues[num]);
         
