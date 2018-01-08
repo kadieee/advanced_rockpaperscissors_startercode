@@ -32,12 +32,21 @@
         $("#enter").click(function(){
                
         var player1=$("#value").val();
-        var player2="rock";
-        var winnerText="no one yet";
+        var player2=$("#value").val();
+        var winnerText="Winner:";
         console.log(player1);
         if(player1 === "rock" && player2 === "rock") {
-        winnerText = "It's a tie!";
-          }
+          (player1===="paper" && player2==="paper")
+          (player1===="scissors" && player2==="scissors")){
+           winnerText = "It's a tie!";
+          }else if((player1==="rock" && player2===scissors)
+          (player1==="paper" && player2==="rock")
+          (player1==="scissors"  && player2==="paper")){
+           winnerText = "CONGRATS!";  
+          }else if((player1==="scissors" && player2==="rock")
+          (player1==="paper" && player2==="scissors")
+          (player1==="rock"  && player2==="paper")){
+           winnerText = "Sorry, try again!";   
         $("#winner").text(winnerText);
         });
         
